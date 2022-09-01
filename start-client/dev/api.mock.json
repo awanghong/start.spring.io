@@ -29,7 +29,7 @@
         "values": [
           {
             "id": "devtools",
-            "name": "Spring Boot DevTools",
+            "name": "Spring Boot DevTools-工具",
             "description": "Provides fast application restarts, LiveReload, and configurations for enhanced development experience.",
             "_links": {
               "reference": {
@@ -1410,12 +1410,11 @@
   },
   "bootVersion": {
     "type": "single-select",
-    "default": "2.2.0.RELEASE",
+    "default": "2.3.5.RELEASE",
     "values": [
-      { "id": "2.2.1.BUILD-SNAPSHOT", "name": "2.2.1 (SNAPSHOT)" },
-      { "id": "2.2.0.RELEASE", "name": "2.2.0" },
-      { "id": "2.1.10.BUILD-SNAPSHOT", "name": "2.1.10 (SNAPSHOT)" },
-      { "id": "2.1.9.RELEASE", "name": "2.1.9" }
+      { "id": "2.6.12-SNAPSHOT", "name": "2.6.12 (SNAPSHOT)" },
+      { "id": "2.3.12.RELEASE", "name": "2.3.12" },
+      { "id": "2.3.5.RELEASE", "name": "2.3.5" }
     ]
   },
   "groupId": { "type": "text", "default": "com.example" },

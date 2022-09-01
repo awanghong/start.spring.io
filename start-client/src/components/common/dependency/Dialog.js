@@ -220,7 +220,7 @@ function Dialog({ onClose }) {
               <div className='control-input'>
                 <input
                   className='input'
-                  placeholder='Web, Security, JPA, Actuator, Devtools...'
+                  placeholder='依赖的中间件'
                   ref={input}
                   value={query}
                   onKeyUp={onKeyUp}

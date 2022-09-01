@@ -15,6 +15,9 @@ const config = {
     historyApiFallback: true,
     compress: true,
     open: false,
+    proxy: {
+      '/starter.zip': 'http://localhost:8888',
+    },
     onAfterSetupMiddleware: function (devServer) {
       if (!devServer) {
         throw new Error('webpack-dev-server is not defined')

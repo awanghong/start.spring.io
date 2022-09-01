@@ -47,11 +47,11 @@ describe('COMPLETE action', () => {
       },
     })
     expect(get(result, 'share')).toBe(
-      'type=maven-project&language=java&platformVersion=2.2.0.RELEASE&packaging=jar&jvmVersion=1.8&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo'
+      'type=maven-project&language=java&platformVersion=2.3.5.RELEASE&packaging=jar&jvmVersion=1.8&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo'
     )
     expect(get(result, 'values.project')).toBe('maven-project')
     expect(get(result, 'values.language')).toBe('java')
-    expect(get(result, 'values.boot')).toBe('2.2.0.RELEASE')
+    expect(get(result, 'values.boot')).toBe('2.3.5.RELEASE')
     expect(get(result, 'values.meta.name')).toBe('demo')
     expect(get(result, 'values.meta.group')).toBe('com.example')
     expect(get(result, 'values.meta.artifact')).toBe('demo')
@@ -221,7 +221,7 @@ describe('LOAD action', () => {
           name: 'demo1',
           packageName: 'com.example1.demo1',
           packaging: 'war',
-          platformVersion: '2.2.0.RELEASE',
+          platformVersion: '2.3.5.RELEASE',
           type: 'gradle-project',
         },
         lists: listsValues,
@@ -229,7 +229,7 @@ describe('LOAD action', () => {
     })
     expect(get(result, 'values.project')).toBe('gradle-project')
     expect(get(result, 'values.language')).toBe('java')
-    expect(get(result, 'values.boot')).toBe('2.2.0.RELEASE')
+    expect(get(result, 'values.boot')).toBe('2.3.5.RELEASE')
     expect(get(result, 'values.meta.name')).toBe('demo1')
     expect(get(result, 'values.meta.group')).toBe('com.example1')
     expect(get(result, 'values.meta.artifact')).toBe('demo1')
